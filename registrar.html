@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+        <link rel="shortcut icon" href="imagens/favicon.png" type="image/png">
+    
+        <title>Pagina de Eventos | Registrar</title>
+      </head>
+<body>
+    <header class= "main-header">
+        <nav class="main-nav container">
+          <ul class="header-list-container list-container">
+              <li class="nav-item">
+                  <a href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a href="programação.html">Programação</a>
+                </li>
+                <li class="nav-item">
+                  <a href="sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a href="localização.html">Localização</a>
+                </li>
+                <li class="nav-item">
+                  <a href="registrar.html">Registre-se</a>
+              </li>
+          </ul>
+        </nav>
+        <hr>
+        <h1 class="page-title-large page-title">Guia de Eventos</h1>
+      </header>
+    <main class="main-section">
+      <h1 class="section-title">Cadastro e Compra de Ingresso</h1>
+        <form action="compra_ingresso.php" method="POST">
+          <div class="form-group"> 
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+           <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+            <div class="form-group">
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Cidade:</label>
+            <select id="address" name="address" rows="2" required>
+              <option value="city1">Campinas, SP</option>
+                <option value="city2">São Paulo, SP</option>
+                <option value="city3">Rio de Janiero, RJ</option>
+                <option value="city4">Belo Horizonte, MG</option>
+                <option value="city5">Slavador, BA </option>
+                <option value="city6">Florianópolis, SC</option>
+            </select>
+          </div>
+            <div class="form-group">
+            <label for="ticket">Tipo de Ingresso:</label>
+            <select id="ticket" name="ticket" required>
+                <option value="standard">Padrão - R$ 100,00</option>
+                <option value="vip">VIP - R$ 200,00</option>
+                <option value="premium">Premium - R$ 300,00</option>
+            </select>
+          </div>
+            <div class="form-group">
+            <label for="quantity">Quantidade de Ingressos:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+          </div>
+          <div class="ticket-info">
+              <div class="form-group">
+                  <label for="payment-method">Método de Pagamento:</label>
+                  <select id="payment-method" name="payment-method" required>
+                      <option value="credit-card">Cartão de Crédito</option>
+                      <option value="debit-card">Cartão de Débito</option>
+                      <option value="paypal">PayPal</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="card-number">Número do Cartão:</label>
+                  <input type="text" id="card-number" name="card-number" required>
+              </div>
+          </div>
+
+          <button class="buy-button" type="submit">Comprar Ingresso</button>
+
+    </section>
+      </form>
+    </main>
+
+  <footer class="main-footer">
+    <div class="container main-footer-container">
+      <h3 class="page-title-medium page-title">Guia de Eventos</h3>
+      <ul class="list-container">
+        <li class="footer-item">
+          <a href="https://pt-br.facebook.com/" target="_blank">
+            <img src="imagens/icon-facebook.svg" alt="Facebook logo">
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="https://open.spotify.com/" target="_blank">
+            <img src="imagens/icon-spotify.svg" alt="Spotify logo">
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="imagens/icon-youtube.svg" alt="Youtube logo">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

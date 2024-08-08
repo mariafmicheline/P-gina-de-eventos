@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+}
+
+ body,button, input {
+    font: 400 16px "Oswald", sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.main-header{
+    background-image: url(Imagens/preto.png);
+    background-position: 50% 39%;
+   
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.main-nav{
+        width: 100%;
+}
+
+.header-list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.nav-item {
+    list-style-type: none;
+    text-transform: uppercase;
+    color: #f7e0b7;
+    transition: 0.2s;
+}
+.nav-item a {
+    color : inherit;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color : rgba(245, 245, 245, 0.9);
+}
+
+   hr {
+    width: 100%;
+}
+
+.page-title-large {
+    font-family:"Rock Salt", cursive;
+    color: #f7e0b7;
+    font-size: 54px
+}
+
+.main-section {
+    padding: 40px 0 64px;
+}
+ .container {
+    max-width: 600px;
+    padding: 0 16px;
+    margin: 0 auto;
+ }
+ .section-title{
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+ }
+
+ .star {
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+
+    margin: 40px 0 20px 0;
+    font-family: "Oswald";
+    font-size: 30px;
+}
+
+.card {
+    background-color: #f7e0b7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+    box-shadow: 6px 6px 10px #00000031;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    max-width: 980px ;
+    margin: 0 auto;
+    grid-gap: 40px;
+}
+
+.card .user {
+        width: 100px;
+        margin: 15px;
+        height: 100px;
+        border-radius: 50px;
+}
+
+.card h4{
+    font-family: 'Oswald';
+    margin-bottom: 5px;
+}
+
+.about-page-image {
+    float:left;
+    margin: 0 10px 5px 0;
+    border-radius: 8%;
+    width: 420px;
+    height: auto;
+}
+
+.section-description {
+    color: rgb(41, 41, 41);
+}
+
+.section-description + .section-description {
+    margin-top: 16px;
+}
+
+.main-footer {
+    background-color: #f7e0b7;
+    padding: 16px 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-title-medium {
+    font-family: 'Rock Salt', cursive;
+    color: #000000;
+    font-size: 26px;
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-item + .footer-item {
+    margin-left: 16px;
+}
+.footer-item img {
+    width: 32px;
+    height: 32px;
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule-item + .schedule-item{
+    border-top: 1px solid #333;
+    margin-top: 8px;
+    padding-top:8px ;
+}
+.show-date {
+    width: 14%;
+}
+
+.show-city {
+    width: 28%;
+}
+
+.show-place {
+    width: 35%;
+}
+
+.buy-ticket-button {
+    width: 20%;
+
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    border: 3px #000000;
+    border-radius: 6px;
+    padding: 4px 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.buy-ticket-button:hover{
+    background-color: transparent;
+    color:#ffe0a9;
+}
+
+.place-button{
+    color: #f7e0b7;
+    font-weight: bold;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 8px 24px;
+    background-color: #000000;
+    transition: 0.2s;
+}
+
+.place-button:hover{
+    background-color: #ffffff;
+}
+
+.location-title {
+    padding: 20px 0;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin:auto;
+}
+
+.description-location{
+    font-size: 20px;
+    text-align: center;
+}
+
+.transporte-section, .hospedagem-section {
+    margin-top: 20px;
+}
+.transporte-section h3, .hospedagem-section h3 {
+    background-color: #fff4dde7;
+    padding: 10px;
+    border-left: 5px solid #000000;
+    margin-bottom: 5px;
+}
+.transporte-section h4, .hospedagem-section h4 {
+    margin-left: 15px;
+}
+.transporte-section p, .hospedagem-section p {
+    margin-left: 30px;
+}
+
+.hostel-button{
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #000000;
+    color: #f7e0b7;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.hostel-button:hover{
+    background-color: #ffffff;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    padding: 8px 15px;
+    margin-bottom: 5px;
+    color: #000000;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    padding: 8px;
+    margin-bottom: auto;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.buy-button {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffdb9d;
+    background-color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.buy-button:hover {
+    background-color: #ffffff;
+}
+
+.ticket-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+/* Responsividade*/
+@media (max-widht:584px) {
+    .page-title-large{
+        font-size: 36px;
+    }  
+
+    .schedule-item{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .schedule-item + .schedule-item{
+        margin-top: 12px;
+    }
+
+    .show-date{
+        width: 32%;
+        padding: 4px;
+    }
+
+    .show-city{
+        width: 33%;
+        padding: 4px;
+    }
+    .show-place{
+        width: 32%;
+        padding: 4px;
+    }
+
+    .buy-ticket-button{
+        width: 60%;
+        margin-top: 12px;
+        padding: 12px 2px;
+    }
+}
+
+@media (max-widht:470px) {
+    .about-page-image{
+        font-size: 160px;
+    }  
+}
